@@ -1,9 +1,10 @@
 name: node_app
 
-on: # specify the build to trigger the automated ci/cd
-    push:
-        branches:
-            - "main"
+on:
+  workflow_run:
+    workflows: [Code Coverage]
+    types:
+      - completed
 jobs:
     build:
         name: Build Docker image
