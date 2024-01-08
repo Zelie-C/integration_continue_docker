@@ -8,7 +8,7 @@ describe('sum module', () => {
 });
 
 describe('diff module', () => {
-    test('diff 2 - 1 to equal 1', () => {
-      expect(diff(2, 1)).toBe(1);
+    test('diff 2 - 1 to equal 7', () => {
+      expect(diff(2, 1)).toBe(7);
     });
   });
