@@ -1,9 +1,7 @@
 name: node_app
 
 on:
-  workflow_run:
-    workflows: [Code Coverage]
-    types: [completed]
+  push
 
 jobs:
   build:
